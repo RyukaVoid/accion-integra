@@ -1,0 +1,51 @@
+// Body
+$body-bg: #f8fafc;
+
+// Typography
+// $font-family-sans-serif: 'Nunito', sans-serif;
+$font-size-base: 1.0rem;
+$line-height-base: 1.6;
+$font-color-base: white;
+
+// Progress bar
+$progress-bar-bg: #75b8c8;
+
+// navbar
+$navbar-bg: #032e48;
+$navbar-padding: 13px 25px;
+    //brand
+    $navbar-brand-color: white;
+    $navbar-brand-color-hover: #fffa73;
+    $navbar-brand-size: 1.5rem;
+
+    //menu
+    $navbar-color: #f8fafc;
+    $navbar-color-hover: #fffa73;
+    $navbar-font-size: 1.1rem;
+// -navbar- //
+
+// buttons
+$btn-primary-bg: #043f62;
+$btn-primary-color: white;
+$btn-primary-color-hover: #fffa73;
+$btn-primary-bg-hover: #043f62;
+
+$btn-radius: 5px;
+$btn-padding: 0.5rem 1rem;
+$btn-font-size: 1.1rem;
+$btn-font-weight: 500;
+
+// Formularios
+$form-control-radius: 5px;
+$form-control-border: none;
+$form-control-bg: #f8fafc;
+$form-control-color: #4f4f4f;
+$form-control-padding: 0.5rem 1rem;
+$form-control-font-size: .9rem;
+$form-control-font-weight: 300;
+$form-control-bg-focus: #ffffff;
+$form-control-color-focus: #f8fafc;
+$form-control-shadow-focus: 0 0 0 0.15rem rgb(51 67 255 / 25%);
+
+// Misc
+$rainbow-background: linear-gradient(90deg,#ffd33d,#ea4aaa 17%,#b34bff 34%,#01feff 51%,#ffd33d 68%,#ea4aaa 85%,#b34bff);
