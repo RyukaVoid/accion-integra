@@ -27,6 +27,11 @@ body{
     width: 100%;
 }
 
+.max-heigth-carousel{
+    max-height: 790px;
+    min-width: auto;
+}
+
 // Barra de progreso
 .progress-bar {
     width: 0%;
@@ -50,12 +55,15 @@ section{
     color: $font-color-base;
 }
 
+// carousel
 .section-1{
     min-height: auto !important;
     text-align: center;
     background: transparent;
 
 }
+
+// sobre nosotros
 .section-2{
     padding: 10px;
     .info{
@@ -75,7 +83,7 @@ section{
         }
     }
     .areas{
-        background: linear-gradient(40deg, rgba(83,93,48,1) 0%, rgba(25,77,106,1) 35%, rgba(4,63,98,1) 100%);
+        background: $areas_background;
         width: 100%;
         display: flex;
         justify-content: space-evenly;
@@ -98,9 +106,15 @@ section{
         }
     }
 }
+// noticias
 .section-3{
-    background-color: rgb(85, 85, 85);
+    background-color: rgb(255, 255, 255);
+    padding: 100px;
+    color: black;
+    min-height: auto;
 }
+
+// Hazte socio
 .section-4{
     background-color: white;
     color: black;
@@ -108,15 +122,71 @@ section{
     min-height: auto;
 }
 
+// contacto y redes
 .section-5{
-    background-color: rgb(33, 33, 33);
-}
-.section-6{
-    background-color: rgb(33, 33, 33);
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    min-height: auto;
+    color: rgba(255, 255, 255, 0.6);
+    .siguenos{
+        background: $areas_background;
+        width: 100%;
+        padding: 75px 45px;
+        color: white;
+        .follow-us{
+            border-right: 1px solid rgba(255, 255, 255, 0.516);
+            .icon{
+                color: white;
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                i{
+                    transition: all .3s;
+                    margin-right: 15px;
+                }
+                b{
+                    transition: all .3s;
+
+                }
+            }
+        }
+    }
+
+    padding-bottom: 90px;
 }
 
-// Contenido secciones
+footer{
+    background-color: rgb(24, 28, 50);
+    padding: 45px 50px;
+    min-height: auto;
+    color: rgba(255, 255, 255, 1);
 
+    .logo-footer{
+        max-width: 200px;
+    }
+    ul{
+        list-style: none;
+        li{
+            a{
+                color: rgba(255, 255, 255, 1);
+                text-decoration: none;
+                transition: all .3s;
+                &:hover{
+                    color: rgba(255, 255, 255, 0.6);
+                }
+            }
+        }
+    }
+}
+
+.icon-link{
+    color: white;
+    text-decoration: none;
+    i{
+        font-size: 1.5rem;
+        margin: 5px;
+    }
+}
 
 // navbar
 nav{
@@ -169,7 +239,7 @@ nav{
                 color: $navbar-color;
                 text-decoration: none;
                 font-size: $navbar-font-size;
-                font-weight: 500;
+                font-weight: $navbar-font-weight;
                 margin: 0 15px;
                 padding: 0;
                 transition: .2s;
@@ -221,20 +291,38 @@ nav{
 }
 
 // buttons
-.btn-primary{
-    background-color: $btn-primary-bg;
-    color: $btn-primary-color;
+.btn{
     border-radius: $btn-radius;
     padding: $btn-padding;
     font-size: $btn-font-size;
     font-weight: $btn-font-weight;
     border: none;
-    transition: .3s;
+}
+
+.btn-primary{
+    background-color: $btn-primary-bg;
+    color: $btn-primary-color;
+    transition: all .3s;
 
     &:hover{
         background-color: $btn-primary-bg-hover;
         color: $btn-primary-color-hover;
     }
+}
+
+.btn-secondary{
+    background-color: $btn-secondary-bg;
+    color: $btn-secondary-color;
+    transition: all .3s;
+
+    &:hover{
+        background-color: $btn-secondary-bg-hover;
+        color: $btn-secondary-color-hover;
+    }
+}
+
+.w-lg-100{
+    width: 100%;
 }
 
 // Formularios
@@ -284,6 +372,46 @@ label{
     padding-bottom: 5px;
 }
 
+.youtube{
+    &:hover{
+        i{
+            color: rgb(255, 0, 0);
+        }
+        b{
+            font-size: 1.1rem;
+        }
+    }
+
+}
+
+.instagram{
+    &:hover{
+        i{
+            color: transparent;
+            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+            background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+            background-clip: text;
+            -webkit-background-clip: text;
+        }
+        b{
+            font-size: 1.1rem;
+        }
+    }
+
+}
+
+.facebook{
+    &:hover{
+        i{
+            color: #4b5f88;
+        }
+        b{
+            font-size: 1.1rem;
+        }
+    }
+
+}
+
 // aniamtions
 @keyframes progress-animation{
     0%{
@@ -316,5 +444,9 @@ label{
     }
 }
 @include media-breakpoint-up(md) { }
-@include media-breakpoint-up(lg) { }
+@include media-breakpoint-up(lg) {
+    .w-lg-100{
+        width: auto;
+    }
+}
 @include media-breakpoint-up(xl) { }

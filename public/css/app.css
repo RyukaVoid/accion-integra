@@ -21574,6 +21574,11 @@ body {
   width: 100%;
 }
 
+.max-heigth-carousel {
+  max-height: 790px;
+  min-width: auto;
+}
+
 .progress-bar {
   width: 0%;
   height: 3px;
@@ -21639,7 +21644,10 @@ section {
 }
 
 .section-3 {
-  background-color: rgb(85, 85, 85);
+  background-color: rgb(255, 255, 255);
+  padding: 100px;
+  color: black;
+  min-height: auto;
 }
 
 .section-4 {
@@ -21650,11 +21658,63 @@ section {
 }
 
 .section-5 {
-  background-color: rgb(33, 33, 33);
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  min-height: auto;
+  color: rgba(255, 255, 255, 0.6);
+  padding-bottom: 90px;
+}
+.section-5 .siguenos {
+  background: linear-gradient(40deg, rgb(83, 93, 48) 0%, rgb(25, 77, 106) 35%, rgb(4, 63, 98) 100%);
+  width: 100%;
+  padding: 75px 45px;
+  color: white;
+}
+.section-5 .siguenos .follow-us {
+  border-right: 1px solid rgba(255, 255, 255, 0.516);
+}
+.section-5 .siguenos .follow-us .icon {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.section-5 .siguenos .follow-us .icon i {
+  transition: all 0.3s;
+  margin-right: 15px;
+}
+.section-5 .siguenos .follow-us .icon b {
+  transition: all 0.3s;
 }
 
-.section-6 {
-  background-color: rgb(33, 33, 33);
+footer {
+  background-color: rgb(24, 28, 50);
+  padding: 45px 50px;
+  min-height: auto;
+  color: rgb(255, 255, 255);
+}
+footer .logo-footer {
+  max-width: 200px;
+}
+footer ul {
+  list-style: none;
+}
+footer ul li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  transition: all 0.3s;
+}
+footer ul li a:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.icon-link {
+  color: white;
+  text-decoration: none;
+}
+.icon-link i {
+  font-size: 1.5rem;
+  margin: 5px;
 }
 
 nav {
@@ -21702,15 +21762,15 @@ nav .nav-wrapper .menu {
 nav .nav-wrapper .menu a {
   color: #f8fafc;
   text-decoration: none;
-  font-size: 1.1rem;
-  font-weight: 500;
+  font-size: 1rem;
+  font-weight: 300;
   margin: 0 15px;
   padding: 0;
   transition: 0.2s;
 }
 nav .nav-wrapper .menu a:hover {
   color: #fffa73;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 nav .nav-wrapper .hamburger {
   display: none;
@@ -21747,19 +21807,36 @@ nav .nav-wrapper .hamburger:hover {
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
 }
 
-.btn-primary {
-  background-color: #043f62;
-  color: white;
+.btn {
   border-radius: 5px;
   padding: 0.5rem 1rem;
   font-size: 1.1rem;
   font-weight: 500;
   border: none;
-  transition: 0.3s;
+}
+
+.btn-primary {
+  background-color: #99d2f4;
+  color: white;
+  transition: all 0.3s;
 }
 .btn-primary:hover {
   background-color: #043f62;
   color: #fffa73;
+}
+
+.btn-secondary {
+  background-color: #fffa73;
+  color: #043f62;
+  transition: all 0.3s;
+}
+.btn-secondary:hover {
+  background-color: #fffa73;
+  color: #043f62;
+}
+
+.w-lg-100 {
+  width: 100%;
 }
 
 .form-style {
@@ -21808,6 +21885,31 @@ label {
   padding-bottom: 5px;
 }
 
+.youtube:hover i {
+  color: rgb(255, 0, 0);
+}
+.youtube:hover b {
+  font-size: 1.1rem;
+}
+
+.instagram:hover i {
+  color: transparent;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.instagram:hover b {
+  font-size: 1.1rem;
+}
+
+.facebook:hover i {
+  color: #4b5f88;
+}
+.facebook:hover b {
+  font-size: 1.1rem;
+}
+
 @-webkit-keyframes progress-animation {
   0% {
     background-position: 100%;
@@ -21850,5 +21952,10 @@ label {
 @media (min-width: 576px) {
   .nav-wrapper .menu {
     display: none;
+  }
+}
+@media (min-width: 992px) {
+  .w-lg-100 {
+    width: auto;
   }
 }
