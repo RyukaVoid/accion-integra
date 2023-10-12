@@ -1,0 +1,95 @@
+// navbar
+nav{
+    background-color: $navbar-bg;
+    width: 100%;
+    padding: $navbar-padding;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    transition: .3s;
+
+    .nav-wrapper{
+        // max-width: 1280px;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        a{
+            font-size: $navbar-brand-size;
+            font-weight: bolder;
+            color: $navbar-brand-color;
+            margin: 0;
+            cursor: pointer;
+            transition: .2s;
+
+            &:hover{
+                color: $navbar-brand-color-hover;
+            }
+
+            .logo-brand{
+                width: 50px;
+                height: 50px;
+                margin-right: 10px;
+                margin-left: 10px;
+                display: inline-block;
+                vertical-align: middle;
+            }
+        }
+
+        .menu{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 0;
+            padding: 0;
+
+            a{
+                color: $navbar-color;
+                text-decoration: none;
+                font-size: $navbar-font-size;
+                font-weight: $navbar-font-weight;
+                margin: 0 15px;
+                padding: 0;
+                transition: .2s;
+
+                &:hover{
+                    color: $navbar-color-hover;
+                    font-size: $navbar-font-size + 0.1rem;
+                }
+            }
+        }
+
+        .hamburger{
+            display: none;
+            cursor: pointer;
+            margin-right: 10px;
+            color: $navbar-color;
+
+            &:hover{
+                color: #ffd33d;
+            }
+        }
+    }
+}
+
+.nav-transparent{
+    background-color: transparent !important;
+    .navbar-brand{
+        color: #043f62;
+        font-weight: 600 !important;
+    }
+    .menu a{
+        color: #043f62 !important;
+        font-weight: 600 !important ;
+    }
+}
+
+@include media-breakpoint-up(sm) {
+    .nav-wrapper{
+        .menu{
+            display: none;
+        }
+    }
+}

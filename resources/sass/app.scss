@@ -1,8 +1,8 @@
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 // Variables
-@import 'variables';
+@import '_variables';
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
@@ -13,18 +13,32 @@
 @import "~@fortawesome/fontawesome-free/scss/solid";
 @import "~@fortawesome/fontawesome-free/scss/brands";
 
+// Misc
+@import './animations';
+@import './buttons';
+@import './carousel';
+@import './footer';
+@import './forms';
+@import './navbar';
+@import './sections';
+@import './social-media-icons';
+@import './scrollbar';
 
 // General
 html, body{
-    overflow-x: hidden;
-    overflow-y: auto;
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    scroll-padding-top: 86.22px;
+}
+
+html{
 }
 
 body{
     width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden !important;
 }
 
 // Barra de progreso
@@ -40,271 +54,17 @@ body{
     background: $progress-bar-bg;
 }
 
-
-
-// Secciones
-section{
-    width: 100%;
-    min-height: 100vh;
-    font-size: $font-size-base;
-    color: $font-color-base;
-}
-
-.section-1{
-    min-height: auto !important;
-    text-align: center;
-    background: transparent;
-
-}
-.section-2{
-    padding: 10px;
-    .info{
-        padding: 100px;
-        background-color: white;
-        color: rgba(0, 0, 0, 0.6);
-        min-height: auto;
-
-        h1{
-            text-align: center;
-            margin-bottom: 40px;
-        }
-
-        p{
-            text-align: center;
-            margin-bottom: 38px;
-        }
-    }
-    .areas{
-        background: linear-gradient(40deg, rgba(83,93,48,1) 0%, rgba(25,77,106,1) 35%, rgba(4,63,98,1) 100%);
-        width: 100%;
-        display: flex;
-        justify-content: space-evenly;
-        padding: 80px 45px;
-
-        div{
-            color: rgba(255, 255, 255, 0.75);
-            margin: 0px 15px;
-            i{
-                text-align: center;
-                width: 100%;
-                margin-bottom: 50px;
-            }
-
-            h4{
-                text-align: center;
-                margin-bottom: 25px;
-                margin: 0px 30px 30px;
-            }
-        }
-    }
-}
-.section-3{
-    background-color: rgb(85, 85, 85);
-}
-.section-4{
-    background-color: white;
-    color: black;
-    padding: 100px;
-    min-height: auto;
-}
-
-.section-5{
-    background-color: rgb(33, 33, 33);
-}
-.section-6{
-    background-color: rgb(33, 33, 33);
-}
-
-// Contenido secciones
-
-
-// navbar
-nav{
-    background-color: $navbar-bg;
-    width: 100%;
-    padding: $navbar-padding;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 50;
-    transition: .3s;
-
-    .nav-wrapper{
-        // max-width: 1280px;
-        margin: 0;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-
-        a{
-            font-size: $navbar-brand-size;
-            font-weight: bolder;
-            color: $navbar-brand-color;
-            margin: 0;
-            cursor: pointer;
-            transition: .2s;
-
-            &:hover{
-                color: $navbar-brand-color-hover;
-            }
-
-            .logo-brand{
-                width: 50px;
-                height: 50px;
-                margin-right: 10px;
-                margin-left: 10px;
-                display: inline-block;
-                vertical-align: middle;
-            }
-        }
-
-        .menu{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin: 0;
-            padding: 0;
-
-            a{
-                color: $navbar-color;
-                text-decoration: none;
-                font-size: $navbar-font-size;
-                font-weight: 500;
-                margin: 0 15px;
-                padding: 0;
-                transition: .2s;
-
-                &:hover{
-                    color: $navbar-color-hover;
-                    font-size: $navbar-font-size + 0.1rem;
-                }
-            }
-        }
-
-        .hamburger{
-            display: none;
-            cursor: pointer;
-            margin-right: 10px;
-            color: $navbar-color;
-
-            &:hover{
-                color: #ffd33d;
-            }
-        }
-    }
-}
-
-.nav-transparent{
-    background-color: transparent !important;
-    .navbar-brand{
-        color: #043f62;
-    }
-}
-
-// carousel
-.carousel-content {
-    position: absolute;
-    bottom: 50%;
-    left: 15%;
-    z-index: 20;
+.icon-link{
     color: white;
-    text-shadow: 0 1px 2px rgba(0,0,0,.6);
-}
-
-.carousel-btn{
-    position: absolute;
-    top: 30%;
-    right: 8%;
-    z-index: 20;
-    color: white;
-    text-shadow: 0 1px 2px rgba(0,0,0,.6);
-}
-
-// buttons
-.btn-primary{
-    background-color: $btn-primary-bg;
-    color: $btn-primary-color;
-    border-radius: $btn-radius;
-    padding: $btn-padding;
-    font-size: $btn-font-size;
-    font-weight: $btn-font-weight;
-    border: none;
-    transition: .3s;
-
-    &:hover{
-        background-color: $btn-primary-bg-hover;
-        color: $btn-primary-color-hover;
+    text-decoration: none;
+    i{
+        font-size: 1.5rem;
+        margin: 5px;
     }
 }
 
-// Formularios
-.form-style{
-    box-shadow: 0px 0px 21px #00000012;
-    display: flex;
-    justify-content: between;
-}
-.form-container{
-    border: none;
-    padding: 0;
-    .form-bg{
-        width: auto;
-        max-width: 280px;
-        height: 100%;
-        display: table-cell;
-
-        img{
-            object-fit: cover;
-            width: 100%;
-        }
-    }
-    .form-content{
-        width: 100%;
-        padding: 30px;
-    }
-}
-
-.form-control{
-    border-radius: $form-control-radius;
-    border: $form-control-border;
-    background-color: $form-control-bg;
-    color: $form-control-color;
-    padding: $form-control-padding;
-    font-size: $form-control-font-size;
-    font-weight: $form-control-font-weight;
-    transition: .3s;
-
-    &:focus{
-        background-color: $form-control-bg-focus;
-        color: $form-control-color-focus;
-        box-shadow: $form-control-shadow-focus;
-    }
-}
-
-label{
-    padding-bottom: 5px;
-}
-
-// aniamtions
-@keyframes progress-animation{
-    0%{
-      background-position: 100%
-    }
-    100%{
-      background-position: 0
-    }
-}
-
-.fade-in{
-    animation: fade-in 12s;
-}
-
-@keyframes fade-in{
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
+.w-lg-100{
+    width: 100%;
 }
 
 // mediaquery
@@ -316,5 +76,9 @@ label{
     }
 }
 @include media-breakpoint-up(md) { }
-@include media-breakpoint-up(lg) { }
+@include media-breakpoint-up(lg) {
+    .w-lg-100{
+        width: auto;
+    }
+}
 @include media-breakpoint-up(xl) { }

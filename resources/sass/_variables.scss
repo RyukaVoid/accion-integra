@@ -2,8 +2,8 @@
 $body-bg: #f8fafc;
 
 // Typography
-// $font-family-sans-serif: 'Nunito', sans-serif;
-$font-size-base: 1.0rem;
+$font-family-sans-serif: 'Montserrat', sans-serif;
+$font-size-base: 1.1rem;
 $line-height-base: 1.6;
 $font-color-base: white;
 
@@ -21,14 +21,21 @@ $navbar-padding: 13px 25px;
     //menu
     $navbar-color: #f8fafc;
     $navbar-color-hover: #fffa73;
-    $navbar-font-size: 1.1rem;
+    $navbar-font-size: 1.0rem;
+    $navbar-font-weight: 300;
 // -navbar- //
 
 // buttons
 $btn-primary-bg: #043f62;
 $btn-primary-color: white;
 $btn-primary-color-hover: #fffa73;
-$btn-primary-bg-hover: #043f62;
+$btn-primary-bg-hover: #032e47;
+
+$btn-secondary-bg: #fffa73;
+$btn-secondary-color: #043f62;
+
+$btn-secondary-bg-hover: #fffa73;
+$btn-secondary-color-hover: #043f62;
 
 $btn-radius: 5px;
 $btn-padding: 0.5rem 1rem;
@@ -49,3 +56,4 @@ $form-control-shadow-focus: 0 0 0 0.15rem rgb(51 67 255 / 25%);
 
 // Misc
 $rainbow-background: linear-gradient(90deg,#ffd33d,#ea4aaa 17%,#b34bff 34%,#01feff 51%,#ffd33d 68%,#ea4aaa 85%,#b34bff);
+$areas_background: linear-gradient(40deg, rgba(83,93,48,1) 0%, rgba(25,77,106,1) 35%, rgba(4,63,98,1) 100%);
