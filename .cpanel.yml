@@ -1,11 +1,11 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/accionintegraorg/Platform/
-    - /bin/cp -R .vscode $DEPLOYPATH
-    - /bin/cp -R assets $DEPLOYPATH
-    - /bin/cp -R css $DEPLOYPATH
-    - /bin/cp -R fonts $DEPLOYPATH
-    - /bin/cp -R img $DEPLOYPATH
-    - /bin/cp -R js $DEPLOYPATH
-    - /bin/cp index.html $DEPLOYPATH
+    - export DEPLOYPATH=/home/accionintegraorg/Platform
+    - export REPOPATH=/home/accionintegraorg/Repositories/accion-integra
+    - /bin/rm -Rf ${DEPLOYPATH}_old
+    - /bin/cp -R ${DEPLOYPATH} ${DEPLOYPATH}_old
+    - /bin/rsync -aP --exclude '.git' --exclude '.well-known' ${REPOPATH}/ ${DEPLOYPATH} --delete-after
+    - /bin/chmod 755 ${DEPLOYPATH}
+    - /bin/find ${DEPLOYPATH} -type d -exec /bin/chmod 755 '{}' \;
+    - /bin/find ${DEPLOYPATH} -type f -exec /bin/chmod 644 '{}' \;
