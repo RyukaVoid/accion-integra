@@ -1,0 +1,58 @@
+// Formularios
+.form-style{
+    box-shadow: 0px 0px 21px #00000012;
+    display: flex;
+    justify-content: between;
+}
+
+.form-container{
+    border: none;
+    padding: 0;
+    .form-bg{
+        width: auto;
+        max-width: 280px;
+        height: 100%;
+        display: table-cell;
+
+        img{
+            object-fit: cover;
+            width: 100%;
+        }
+    }
+    .form-content{
+        width: 100%;
+        padding: 30px;
+    }
+}
+
+.form-bg{
+    width: auto;
+    max-width: 280px;
+    height: 100%;
+    display: table-cell;
+
+    img{
+        object-fit: cover;
+        width: 100%;
+    }
+}
+.form-control{
+    border-radius: $form-control-radius;
+    border: $form-control-border;
+    background-color: $form-control-bg;
+    color: $form-control-color;
+    padding: $form-control-padding;
+    font-size: $form-control-font-size;
+    font-weight: $form-control-font-weight;
+    transition: .3s;
+
+    &:focus{
+        background-color: $form-control-bg-focus;
+        color: $form-control-color-focus;
+        box-shadow: $form-control-shadow-focus;
+    }
+}
+
+label{
+    padding-bottom: 5px;
+}

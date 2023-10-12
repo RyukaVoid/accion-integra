@@ -1,0 +1,30 @@
+// buttons
+.btn{
+    border-radius: $btn-radius;
+    padding: $btn-padding;
+    font-size: $btn-font-size;
+    font-weight: $btn-font-weight;
+    border: none;
+}
+
+.btn-primary{
+    background-color: $btn-primary-bg;
+    color: $btn-primary-color;
+    transition: all .3s;
+
+    &:hover{
+        background-color: $btn-primary-bg-hover;
+        color: $btn-primary-color-hover;
+    }
+}
+
+.btn-secondary{
+    background-color: $btn-secondary-bg;
+    color: $btn-secondary-color;
+    transition: all .3s;
+
+    &:hover{
+        background-color: $btn-secondary-bg-hover;
+        color: $btn-secondary-color-hover;
+    }
+}

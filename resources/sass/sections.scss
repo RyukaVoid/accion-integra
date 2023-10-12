@@ -1,0 +1,93 @@
+// Secciones
+section{
+    width: 100%;
+    max-width: 1300px !important;
+    margin: auto;
+    min-height: 100vh;
+    font-size: $font-size-base;
+    color: $font-color-base;
+}
+.text-op-6{
+    color: rgba(0, 0, 0, 0.6);
+}
+.text-white-6{
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.areas-bg{
+    background: $areas_background;
+}
+
+// sobre nosotros
+.section-2{
+    min-height: auto !important;
+    .areas{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 80px 45px;
+
+        div{
+            color: rgba(255, 255, 255, 0.75);
+            margin: 0px 15px;
+            i{
+                text-align: center;
+                width: 100%;
+                margin-bottom: 50px;
+            }
+
+            h4{
+                text-align: center;
+                margin-bottom: 25px;
+                margin: 0px 30px 30px;
+            }
+        }
+    }
+}
+// noticias
+.section-3{
+    background-color: rgb(255, 255, 255);
+    padding: 100px;
+    color: black;
+    min-height: auto;
+}
+// Hazte socio
+.section-4{
+    background-color: white;
+    color: black;
+    padding: 100px;
+    min-height: auto;
+}
+
+// contacto y redes
+.section-5{
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    min-height: auto;
+    color: rgba(255, 255, 255, 0.6);
+    .siguenos{
+        background: $areas_background;
+        width: 100%;
+        padding: 35px 35px;
+        color: white;
+        .follow-us{
+            border-right: 1px solid rgba(255, 255, 255, 0.516);
+            .icon{
+                color: white;
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                i{
+                    transition: all .3s;
+                    margin-right: 15px;
+                }
+                b{
+                    transition: all .3s;
+
+                }
+            }
+        }
+    }
+
+    padding-bottom: 90px;
+}

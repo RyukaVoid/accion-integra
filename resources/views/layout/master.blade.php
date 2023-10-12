@@ -8,15 +8,18 @@
     {{-- fabicon --}}
     <link rel="icon" type='image/x-icon' href="{{ asset('images/logo_icon.ico') }}">
     @yield('css')
-    <title>Corporación Acción Integra @yield('title')</title>
+    <title>@yield('title') - Corporación Acción Integra</title>
 </head>
 <body>
-    @guest
-        @include('layout.navbar')
-    @endguest
-    @yield('content')
+    <div id="app">
+        <v-app app>
+            @guest
+                @include('layout.navbar')
+            @endguest
+            @yield('content')
+        </v-app>
+    </div>
     <script src="{{ asset('js/app.js') }}"></script>
-    <script src="{{ asset('js/relax.js') }}"></script>
     <script src="{{ asset('js/navbar.js') }}"></script>
     @yield('js')
 </body>
