@@ -11,14 +11,14 @@
     <title>@yield('title') - Corporación Acción Integra</title>
 </head>
 <body>
-    <div id="app">
-        <v-app app>
-            @guest
-                @include('layout.navbar')
-            @endguest
-            @yield('content')
-        </v-app>
-    </div>
+    <v-app app id="app">
+        @guest
+            @include('layout.navbar')
+        @endguest
+        @yield('content')
+        <div id="progress-bar"></div>
+    </v-app>
+    <script src="{{ asset('js/progress-bar.js') }}"></script>
     <script src="{{ asset('js/app.js') }}"></script>
     <script src="{{ asset('js/navbar.js') }}"></script>
     @yield('js')

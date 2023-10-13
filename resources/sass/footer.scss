@@ -1,4 +1,5 @@
 footer{
+    font-size: 1.0rem;
     background-color: rgb(24, 28, 50);
     min-height: auto;
     color: rgba(255, 255, 255, 1);
@@ -6,16 +7,18 @@ footer{
     .logo-footer{
         max-width: 200px;
     }
-    ul{
-        list-style: none;
-        li{
-            a{
-                color: rgba(255, 255, 255, 1);
-                text-decoration: none;
-                transition: all .3s;
-                &:hover{
-                    color: rgba(255, 255, 255, 0.6);
-                }
+    em{
+        transition: all .3s;
+    }
+    a{
+        color: rgba(255, 255, 255, 1);
+        font-size: 1.5rem;
+        text-decoration: none;
+        transition: all .3s;
+        &:hover{
+            em{
+                color: rgba(255, 243, 77, 0.6);
+                font-size: 1.9rem !important;
             }
         }
     }

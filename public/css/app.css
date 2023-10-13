@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap);
 @charset "UTF-8";
 /*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)
@@ -49,11 +49,11 @@
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
   --bs-body-bg-rgb: 248, 250, 252;
-  --bs-font-sans-serif: "Montserrat", sans-serif;
+  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
-  --bs-body-font-size: 1.1rem;
+  --bs-body-font-size: 1.2rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.6;
   --bs-body-color: #212529;
@@ -105,52 +105,52 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 }
 
 h1, .h1 {
-  font-size: calc(1.4rem + 1.8vw);
+  font-size: calc(1.425rem + 2.1vw);
 }
 @media (min-width: 1200px) {
   h1, .h1 {
-    font-size: 2.75rem;
+    font-size: 3rem;
   }
 }
 
 h2, .h2 {
-  font-size: calc(1.345rem + 1.14vw);
+  font-size: calc(1.365rem + 1.38vw);
 }
 @media (min-width: 1200px) {
   h2, .h2 {
-    font-size: 2.2rem;
+    font-size: 2.4rem;
   }
 }
 
 h3, .h3 {
-  font-size: calc(1.3175rem + 0.81vw);
+  font-size: calc(1.335rem + 1.02vw);
 }
 @media (min-width: 1200px) {
   h3, .h3 {
-    font-size: 1.925rem;
+    font-size: 2.1rem;
   }
 }
 
 h4, .h4 {
-  font-size: calc(1.29rem + 0.48vw);
+  font-size: calc(1.305rem + 0.66vw);
 }
 @media (min-width: 1200px) {
   h4, .h4 {
-    font-size: 1.65rem;
+    font-size: 1.8rem;
   }
 }
 
 h5, .h5 {
-  font-size: calc(1.2625rem + 0.15vw);
+  font-size: calc(1.275rem + 0.3vw);
 }
 @media (min-width: 1200px) {
   h5, .h5 {
-    font-size: 1.375rem;
+    font-size: 1.5rem;
   }
 }
 
 h6, .h6 {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 p {
@@ -489,12 +489,12 @@ progress {
 }
 
 .lead {
-  font-size: calc(1.2625rem + 0.15vw);
+  font-size: calc(1.275rem + 0.3vw);
   font-weight: 300;
 }
 @media (min-width: 1200px) {
   .lead {
-    font-size: 1.375rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -588,11 +588,11 @@ progress {
 
 .blockquote {
   margin-bottom: 1rem;
-  font-size: calc(1.2625rem + 0.15vw);
+  font-size: calc(1.275rem + 0.3vw);
 }
 @media (min-width: 1200px) {
   .blockquote {
-    font-size: 1.375rem;
+    font-size: 1.5rem;
   }
 }
 .blockquote > :last-child {
@@ -2181,18 +2181,18 @@ progress {
 .col-form-label-lg {
   padding-top: calc(0.5rem + 1px);
   padding-bottom: calc(0.5rem + 1px);
-  font-size: calc(1.2625rem + 0.15vw);
+  font-size: calc(1.275rem + 0.3vw);
 }
 @media (min-width: 1200px) {
   .col-form-label-lg {
-    font-size: 1.375rem;
+    font-size: 1.5rem;
   }
 }
 
 .col-form-label-sm {
   padding-top: calc(0.25rem + 1px);
   padding-bottom: calc(0.25rem + 1px);
-  font-size: 0.9625rem;
+  font-size: 1.05rem;
 }
 
 .form-text {
@@ -2205,7 +2205,7 @@ progress {
   display: block;
   width: 100%;
   padding: 0.375rem 0.75rem;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: 400;
   line-height: 1.6;
   color: #212529;
@@ -2346,7 +2346,7 @@ progress {
 .form-control-sm {
   min-height: calc(1.6em + 0.5rem + 2px);
   padding: 0.25rem 0.5rem;
-  font-size: 0.9625rem;
+  font-size: 1.05rem;
   border-radius: 0.2rem;
 }
 .form-control-sm::-webkit-file-upload-button {
@@ -2371,12 +2371,12 @@ progress {
 .form-control-lg {
   min-height: calc(1.6em + 1rem + 2px);
   padding: 0.5rem 1rem;
-  font-size: calc(1.2625rem + 0.15vw);
+  font-size: calc(1.275rem + 0.3vw);
   border-radius: 0.3rem;
 }
 @media (min-width: 1200px) {
   .form-control-lg {
-    font-size: 1.375rem;
+    font-size: 1.5rem;
   }
 }
 .form-control-lg::-webkit-file-upload-button {
@@ -2430,7 +2430,7 @@ textarea.form-control-lg {
   width: 100%;
   padding: 0.375rem 2.25rem 0.375rem 0.75rem;
   -moz-padding-start: calc(0.75rem - 3px);
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: 400;
   line-height: 1.6;
   color: #212529;
@@ -2472,7 +2472,7 @@ textarea.form-control-lg {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
   padding-left: 0.5rem;
-  font-size: 0.9625rem;
+  font-size: 1.05rem;
   border-radius: 0.2rem;
 }
 
@@ -2480,18 +2480,18 @@ textarea.form-control-lg {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: 1rem;
-  font-size: calc(1.2625rem + 0.15vw);
+  font-size: calc(1.275rem + 0.3vw);
   border-radius: 0.3rem;
 }
 @media (min-width: 1200px) {
   .form-select-lg {
-    font-size: 1.375rem;
+    font-size: 1.5rem;
   }
 }
 
 .form-check {
   display: block;
-  min-height: 1.76rem;
+  min-height: 1.92rem;
   padding-left: 1.5em;
   margin-bottom: 0.125rem;
 }
@@ -2789,7 +2789,7 @@ textarea.form-control-lg {
   display: flex;
   align-items: center;
   padding: 0.375rem 0.75rem;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: 400;
   line-height: 1.6;
   color: #212529;
@@ -2805,7 +2805,7 @@ textarea.form-control-lg {
 .input-group-lg > .input-group-text,
 .input-group-lg > .btn {
   padding: 0.5rem 1rem;
-  font-size: calc(1.2625rem + 0.15vw);
+  font-size: calc(1.275rem + 0.3vw);
   border-radius: 0.3rem;
 }
 @media (min-width: 1200px) {
@@ -2813,7 +2813,7 @@ textarea.form-control-lg {
 .input-group-lg > .form-select,
 .input-group-lg > .input-group-text,
 .input-group-lg > .btn {
-    font-size: 1.375rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -2822,7 +2822,7 @@ textarea.form-control-lg {
 .input-group-sm > .input-group-text,
 .input-group-sm > .btn {
   padding: 0.25rem 0.5rem;
-  font-size: 0.9625rem;
+  font-size: 1.05rem;
   border-radius: 0.2rem;
 }
 
@@ -2863,7 +2863,7 @@ textarea.form-control-lg {
   max-width: 100%;
   padding: 0.25rem 0.5rem;
   margin-top: 0.1rem;
-  font-size: 0.9625rem;
+  font-size: 1.05rem;
   color: #fff;
   background-color: rgba(25, 135, 84, 0.9);
   border-radius: 0.25rem;
@@ -2952,7 +2952,7 @@ textarea.form-control-lg {
   max-width: 100%;
   padding: 0.25rem 0.5rem;
   margin-top: 0.1rem;
-  font-size: 0.9625rem;
+  font-size: 1.05rem;
   color: #fff;
   background-color: rgba(220, 53, 69, 0.9);
   border-radius: 0.25rem;
@@ -3516,18 +3516,18 @@ textarea.form-control-lg {
 
 .btn-lg, .btn-group-lg > .btn {
   padding: 0.5rem 1rem;
-  font-size: calc(1.2625rem + 0.15vw);
+  font-size: calc(1.275rem + 0.3vw);
   border-radius: 0.3rem;
 }
 @media (min-width: 1200px) {
   .btn-lg, .btn-group-lg > .btn {
-    font-size: 1.375rem;
+    font-size: 1.5rem;
   }
 }
 
 .btn-sm, .btn-group-sm > .btn {
   padding: 0.25rem 0.5rem;
-  font-size: 0.9625rem;
+  font-size: 1.05rem;
   border-radius: 0.2rem;
 }
 
@@ -3599,7 +3599,7 @@ textarea.form-control-lg {
   min-width: 10rem;
   padding: 0.5rem 0;
   margin: 0;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: #212529;
   text-align: left;
   list-style: none;
@@ -3834,7 +3834,7 @@ textarea.form-control-lg {
   display: block;
   padding: 0.5rem 1rem;
   margin-bottom: 0;
-  font-size: 0.9625rem;
+  font-size: 1.05rem;
   color: #6c757d;
   white-space: nowrap;
 }
@@ -4088,16 +4088,16 @@ textarea.form-control-lg {
   justify-content: space-between;
 }
 .navbar-brand {
-  padding-top: 0.28rem;
-  padding-bottom: 0.28rem;
+  padding-top: 0.26rem;
+  padding-bottom: 0.26rem;
   margin-right: 1rem;
-  font-size: calc(1.2625rem + 0.15vw);
+  font-size: calc(1.275rem + 0.3vw);
   text-decoration: none;
   white-space: nowrap;
 }
 @media (min-width: 1200px) {
   .navbar-brand {
-    font-size: 1.375rem;
+    font-size: 1.5rem;
   }
 }
 .navbar-nav {
@@ -4128,7 +4128,7 @@ textarea.form-control-lg {
 
 .navbar-toggler {
   padding: 0.25rem 0.75rem;
-  font-size: calc(1.2625rem + 0.15vw);
+  font-size: calc(1.275rem + 0.3vw);
   line-height: 1;
   background-color: transparent;
   border: 1px solid transparent;
@@ -4137,7 +4137,7 @@ textarea.form-control-lg {
 }
 @media (min-width: 1200px) {
   .navbar-toggler {
-    font-size: 1.375rem;
+    font-size: 1.5rem;
   }
 }
 @media (prefers-reduced-motion: reduce) {
@@ -4723,7 +4723,7 @@ textarea.form-control-lg {
   align-items: center;
   width: 100%;
   padding: 1rem 1.25rem;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: #212529;
   text-align: left;
   background-color: #f8fafc;
@@ -4912,11 +4912,11 @@ textarea.form-control-lg {
 
 .pagination-lg .page-link {
   padding: 0.75rem 1.5rem;
-  font-size: calc(1.2625rem + 0.15vw);
+  font-size: calc(1.275rem + 0.3vw);
 }
 @media (min-width: 1200px) {
   .pagination-lg .page-link {
-    font-size: 1.375rem;
+    font-size: 1.5rem;
   }
 }
 .pagination-lg .page-item:first-child .page-link {
@@ -4930,7 +4930,7 @@ textarea.form-control-lg {
 
 .pagination-sm .page-link {
   padding: 0.25rem 0.5rem;
-  font-size: 0.9625rem;
+  font-size: 1.05rem;
 }
 .pagination-sm .page-item:first-child .page-link {
   border-top-left-radius: 0.2rem;
@@ -5076,7 +5076,7 @@ textarea.form-control-lg {
   display: flex;
   height: 1rem;
   overflow: hidden;
-  font-size: 0.825rem;
+  font-size: 0.9rem;
   background-color: #e9ecef;
   border-radius: 0.25rem;
 }
@@ -5089,7 +5089,7 @@ textarea.form-control-lg {
   color: #fff;
   text-align: center;
   white-space: nowrap;
-  background-color: #75b8c8;
+  background-color: #fffa73;
   transition: width 0.6s ease;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -5833,7 +5833,7 @@ textarea.form-control-lg {
   word-spacing: normal;
   white-space: normal;
   line-break: auto;
-  font-size: 0.9625rem;
+  font-size: 1.05rem;
   word-wrap: break-word;
   opacity: 0;
 }
@@ -5935,7 +5935,7 @@ textarea.form-control-lg {
   word-spacing: normal;
   white-space: normal;
   line-break: auto;
-  font-size: 0.9625rem;
+  font-size: 1.05rem;
   word-wrap: break-word;
   background-color: #fff;
   background-clip: padding-box;
@@ -6029,7 +6029,7 @@ textarea.form-control-lg {
 .popover-header {
   padding: 0.5rem 1rem;
   margin-bottom: 0;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   background-color: #f0f0f0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   border-top-left-radius: calc(0.3rem - 1px);
@@ -7654,27 +7654,27 @@ textarea.form-control-lg {
 }
 
 .fs-1 {
-  font-size: calc(1.4rem + 1.8vw) !important;
+  font-size: calc(1.425rem + 2.1vw) !important;
 }
 
 .fs-2 {
-  font-size: calc(1.345rem + 1.14vw) !important;
+  font-size: calc(1.365rem + 1.38vw) !important;
 }
 
 .fs-3 {
-  font-size: calc(1.3175rem + 0.81vw) !important;
+  font-size: calc(1.335rem + 1.02vw) !important;
 }
 
 .fs-4 {
-  font-size: calc(1.29rem + 0.48vw) !important;
+  font-size: calc(1.305rem + 0.66vw) !important;
 }
 
 .fs-5 {
-  font-size: calc(1.2625rem + 0.15vw) !important;
+  font-size: calc(1.275rem + 0.3vw) !important;
 }
 
 .fs-6 {
-  font-size: 1.1rem !important;
+  font-size: 1.2rem !important;
 }
 
 .fst-italic {
@@ -11288,23 +11288,23 @@ textarea.form-control-lg {
 }
 @media (min-width: 1200px) {
   .fs-1 {
-    font-size: 2.75rem !important;
+    font-size: 3rem !important;
   }
 
   .fs-2 {
-    font-size: 2.2rem !important;
+    font-size: 2.4rem !important;
   }
 
   .fs-3 {
-    font-size: 1.925rem !important;
+    font-size: 2.1rem !important;
   }
 
   .fs-4 {
-    font-size: 1.65rem !important;
+    font-size: 1.8rem !important;
   }
 
   .fs-5 {
-    font-size: 1.375rem !important;
+    font-size: 1.5rem !important;
   }
 }
 @media print {
@@ -21664,7 +21664,7 @@ readers do not read off random characters that represent icons */
   }
 }
 .btn {
-  border-radius: 5px;
+  border-radius: 15px;
   padding: 0.5rem 1rem;
   font-size: 1.1rem;
   font-weight: 500;
@@ -21691,6 +21691,18 @@ readers do not read off random characters that represent icons */
   color: #043f62;
 }
 
+.btn-tertiary {
+  background-color: transparent;
+  color: #000000 !important;
+  transition: all 0.3s;
+  border: 2px solid black;
+}
+.btn-tertiary:hover {
+  background-color: #000000;
+  color: white !important;
+  border: 2px solid #000000;
+}
+
 .carousel-content {
   position: absolute;
   bottom: 50%;
@@ -21715,6 +21727,7 @@ readers do not read off random characters that represent icons */
 }
 
 footer {
+  font-size: 1rem;
   background-color: rgb(24, 28, 50);
   min-height: auto;
   color: rgb(255, 255, 255);
@@ -21722,16 +21735,18 @@ footer {
 footer .logo-footer {
   max-width: 200px;
 }
-footer ul {
-  list-style: none;
+footer em {
+  transition: all 0.3s;
 }
-footer ul li a {
+footer a {
   color: rgb(255, 255, 255);
+  font-size: 1.5rem;
   text-decoration: none;
   transition: all 0.3s;
 }
-footer ul li a:hover {
-  color: rgba(255, 255, 255, 0.6);
+footer a:hover em {
+  color: rgba(255, 243, 77, 0.6);
+  font-size: 1.9rem !important;
 }
 
 .form-style {
@@ -21774,7 +21789,7 @@ footer ul li a:hover {
 
 .form-control {
   border-radius: 5px;
-  border: none;
+  border: 1px solid gray;
   background-color: #f8fafc;
   color: #4f4f4f;
   padding: 0.5rem 1rem;
@@ -21784,7 +21799,7 @@ footer ul li a:hover {
 }
 .form-control:focus {
   background-color: #ffffff;
-  color: #f8fafc;
+  color: #616161;
   box-shadow: 0 0 0 0.15rem rgba(51, 67, 255, 0.25);
 }
 
@@ -21800,7 +21815,7 @@ nav {
   top: 0;
   left: 0;
   z-index: 50;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 nav .nav-wrapper {
   margin: 0;
@@ -21814,7 +21829,7 @@ nav .nav-wrapper a {
   color: white;
   margin: 0;
   cursor: pointer;
-  transition: 0.2s;
+  transition: 0.3s;
 }
 nav .nav-wrapper a:hover {
   color: #fffa73;
@@ -21837,15 +21852,15 @@ nav .nav-wrapper .menu {
 nav .nav-wrapper .menu a {
   color: #f8fafc;
   text-decoration: none;
-  font-size: 1rem;
-  font-weight: 300;
+  font-size: 1.2rem;
+  font-weight: 600;
   margin: 0 15px;
   padding: 0;
   transition: 0.2s;
 }
 nav .nav-wrapper .menu a:hover {
-  color: #fffa73;
-  font-size: 1.1rem;
+  color: #c7c478;
+  font-size: 1.3rem;
 }
 nav .nav-wrapper .hamburger {
   display: none;
@@ -21879,12 +21894,12 @@ section {
   max-width: 1300px !important;
   margin: auto;
   min-height: 100vh;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: white;
 }
 
 .text-op-6 {
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.8);
 }
 
 .text-white-6 {
@@ -21892,7 +21907,7 @@ section {
 }
 
 .areas-bg {
-  background: linear-gradient(40deg, rgb(83, 93, 48) 0%, rgb(25, 77, 106) 35%, rgb(4, 63, 98) 100%);
+  background: linear-gradient(40deg, rgb(83, 93, 48) 0%, rgb(25, 77, 106) 35%, rgb(3, 46, 72) 100%);
 }
 
 .section-2 {
@@ -21941,7 +21956,7 @@ section {
   padding-bottom: 90px;
 }
 .section-5 .siguenos {
-  background: linear-gradient(40deg, rgb(83, 93, 48) 0%, rgb(25, 77, 106) 35%, rgb(4, 63, 98) 100%);
+  background: linear-gradient(40deg, rgb(83, 93, 48) 0%, rgb(25, 77, 106) 35%, rgb(3, 46, 72) 100%);
   width: 100%;
   padding: 35px 35px;
   color: white;
@@ -21963,11 +21978,11 @@ section {
   transition: all 0.3s;
 }
 
-.youtube em {
+.youtube {
   color: rgb(255, 0, 0);
 }
 
-.instagram em {
+.instagram {
   color: transparent;
   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
   background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
@@ -21975,7 +21990,7 @@ section {
   -webkit-background-clip: text;
 }
 
-.facebook em {
+.facebook {
   color: #4b5f88;
 }
 
@@ -21986,6 +22001,11 @@ section {
 .icon-link i {
   font-size: 1.5rem;
   margin: 5px;
+}
+
+.social-card {
+  box-shadow: 4px 4px 5px 1px rgba(132, 131, 131, 0.6196078431);
+  border-radius: 15px;
 }
 
 /* width */
@@ -22009,28 +22029,38 @@ section {
 }
 
 html, body {
-  margin: 0;
-  padding: 0;
   scroll-behavior: smooth;
-  scroll-padding-top: 86.22px;
+  scroll-padding-top: 120.22px;
+  overflow: hidden;
 }
 
-body {
-  width: 100%;
-  overflow-x: hidden;
-  overflow-y: hidden !important;
+.v-application {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+}
+.v-application [class*=text-] {
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
 }
 
-.progress-bar {
+#progress-bar {
   width: 0%;
-  height: 3px;
+  height: 5px;
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
   z-index: 11;
   border-radius: 10px;
-  background: #75b8c8;
+  background: #fffa73;
+}
+
+.hover-image {
+  overflow: hidden;
+}
+
+.hover-image:hover {
+  transform: scale(1.5);
 }
 
 .icon-link {

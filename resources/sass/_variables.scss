@@ -2,13 +2,14 @@
 $body-bg: #f8fafc;
 
 // Typography
-$font-family-sans-serif: 'Montserrat', sans-serif;
-$font-size-base: 1.1rem;
+$font-family: 'Lato', sans-serif;
+$font-size-base: 1.2rem;
 $line-height-base: 1.6;
+$font-weight-base: 400;
 $font-color-base: white;
 
 // Progress bar
-$progress-bar-bg: #75b8c8;
+$progress-bar-bg: #fffa73;
 
 // navbar
 $navbar-bg: #032e48;
@@ -20,40 +21,52 @@ $navbar-padding: 13px 25px;
 
     //menu
     $navbar-color: #f8fafc;
-    $navbar-color-hover: #fffa73;
-    $navbar-font-size: 1.0rem;
-    $navbar-font-weight: 300;
+    $navbar-color-hover: #c7c478;
+    $navbar-font-size: 1.2rem;
+    $navbar-font-weight: 600;
 // -navbar- //
 
 // buttons
+// primary
 $btn-primary-bg: #043f62;
 $btn-primary-color: white;
 $btn-primary-color-hover: #fffa73;
 $btn-primary-bg-hover: #032e47;
 
+// secondary
 $btn-secondary-bg: #fffa73;
 $btn-secondary-color: #043f62;
 
 $btn-secondary-bg-hover: #fffa73;
 $btn-secondary-color-hover: #043f62;
 
-$btn-radius: 5px;
+// tertiary
+$btn-tertiary-bg: transparent;
+$btn-tertiary-color: #000000;
+$btn-tertiary-border: 2px solid black;
+
+$btn-tertiary-color-hover: #ffffff;
+$btn-tertiary-bg-hover: #000000;
+$btn-tertiary-color-hover: #000000;
+$btn-tertiary-border-hover: 2px solid #000000;
+
+$btn-radius: 15px;
 $btn-padding: 0.5rem 1rem;
 $btn-font-size: 1.1rem;
 $btn-font-weight: 500;
 
 // Formularios
 $form-control-radius: 5px;
-$form-control-border: none;
+$form-control-border: 1px solid gray;
 $form-control-bg: #f8fafc;
 $form-control-color: #4f4f4f;
 $form-control-padding: 0.5rem 1rem;
 $form-control-font-size: .9rem;
 $form-control-font-weight: 300;
 $form-control-bg-focus: #ffffff;
-$form-control-color-focus: #f8fafc;
+$form-control-color-focus: #616161;
 $form-control-shadow-focus: 0 0 0 0.15rem rgb(51 67 255 / 25%);
 
 // Misc
 $rainbow-background: linear-gradient(90deg,#ffd33d,#ea4aaa 17%,#b34bff 34%,#01feff 51%,#ffd33d 68%,#ea4aaa 85%,#b34bff);
-$areas_background: linear-gradient(40deg, rgba(83,93,48,1) 0%, rgba(25,77,106,1) 35%, rgba(4,63,98,1) 100%);
+$areas_background: linear-gradient(40deg, rgba(83,93,48,1) 0%, rgba(25,77,106,1) 35%, rgba(3, 46, 72, 1) 100%);

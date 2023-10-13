@@ -11,7 +11,7 @@ document.onscroll = () => {
 }
 
 function setClassNavbar(){
-    const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    const winScroll = document.documentElement.scrollTop;
     if (winScroll > 0){
         navbar.classList.remove("nav-transparent");
     } else {

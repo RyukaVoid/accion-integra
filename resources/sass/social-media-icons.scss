@@ -1,26 +1,18 @@
 .youtube{
-    em{
-        color: rgb(255, 0, 0);
-    }
+    color: rgb(255, 0, 0);
 
 }
 
 .instagram{
-    em{
-        color: transparent;
-        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-        background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-        background-clip: text;
-        -webkit-background-clip: text;
-    }
-    
-
+    color: transparent;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
 }
 
 .facebook{
-    em{
-        color: #4b5f88;
-    }
+    color: #4b5f88;
 
 }
 
@@ -31,4 +23,9 @@
         font-size: 1.5rem;
         margin: 5px;
     }
+}
+
+.social-card{
+    box-shadow: 4px 4px 5px 1px #8483839e;
+    border-radius: 15px;
 }

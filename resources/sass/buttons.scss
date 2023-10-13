@@ -28,3 +28,16 @@
         color: $btn-secondary-color-hover;
     }
 }
+
+.btn-tertiary{
+    background-color: $btn-tertiary-bg;
+    color: $btn-tertiary-color !important;
+    transition: all .3s;
+    border: $btn-tertiary-border;
+
+    &:hover{
+        background-color: $btn-tertiary-bg-hover;
+        color: white !important;
+        border: $btn-tertiary-border-hover;
+    }
+}
