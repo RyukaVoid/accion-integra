@@ -18,3 +18,17 @@ function setClassNavbar(){
         navbar.classList.add("nav-transparent");
     }
 }
+
+// Button
+const btn = document.getElementById("toggle-navbar");
+
+btn.addEventListener("click", () => {
+    const navbar = document.getElementById("navbar-menu");
+
+    if (!navbar) {
+        console.error('No existe el elemento con id navbar-menu');
+        return;
+    }
+
+    navbar.classList.toggle("active-nav-menu");
+});

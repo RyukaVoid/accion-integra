@@ -1,0 +1,80 @@
+.divider-top{
+    background-color: $areas_background;
+	position: relative;
+	margin-top: 0;
+	overflow: hidden;
+	z-index: 100;
+	height: 130px;
+	clip-path: polygon(0 0,100% 50px,100% 100%,0 100%);
+}
+
+.divider-bottom{
+    background-color: $areas_background;
+	position: relative;
+	margin-top: 0;
+	overflow: hidden;
+	z-index: 100;
+	height: 130px;
+	clip-path: polygon(0 0,100% 0,100% 100%,0 calc(100% - 50px));
+}
+
+.divider-bottom-arrow{
+    background-color: $areas_background;
+    position: relative;
+    margin-top: 0;
+    overflow: hidden;
+    z-index: 100;
+    height: 110px;
+    clip-path:  polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 50px)); 
+}
+
+.wave-container {  
+	height: 15vh;
+	background-color: #ffffff;
+	position: relative;
+  }
+  
+  .wave-container::before {   
+	content: "";
+	width: 100%;
+	height: 90px;
+	position: absolute;
+	bottom: -0.3%;
+	left: 0;
+	background-size: auto;
+	background-repeat: repeat no-repeat;
+	background-position: 19vw bottom;
+	background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1200 80' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0 13L33 11C82 8 133 8 200 17C267 26 333 40 400 42C467 44 533 35 600 24C667 13 733 0 800 0C867 0 933 13 1000 17C1067 22 1133 17 1167 15L1200 13V80H1167C1133 80 1067 80 1000 80C933 80 867 80 800 80C733 80 667 80 600 80C533 80 467 80 400 80C333 80 267 80 200 80C133 80 67 80 33 80H0V22.332Z' fill='%23181c32'/></svg>");
+  }
+  
+  @media(max-width:850px) {
+	.wave-container::before {    
+	  height: 45px
+	}  
+  }
+
+
+  .wave-container-top {  
+	height: 15vh;
+	background-color: #033F62;
+	position: relative;
+  }
+  
+  .wave-container-top::before {   
+	content: "";
+	width: 100%;
+	height: 94px;
+	position: absolute;
+	bottom: -0.3%;
+	left: 0;
+	background-size: auto;
+	background-repeat: repeat no-repeat;
+	background-position: 22vw bottom;
+	background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1200  134' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0 98L50 92C100 86 200 74 300 50C400 26 500 -10 600 2C700 14 800 74 900 98C1000 122 1100 110 1150 104L1200 98V134H1150C1100 134 1000 134 900 134C800 134 700 134 600 134C500 134 400 134 300 134C200 134 100 134 50 134H0V98Z' fill='%23ffffff'/></svg>");
+  }
+  
+  @media(max-width:850px) {
+	.wave-container-top::before {    
+	  height: 47px
+	}  
+  }

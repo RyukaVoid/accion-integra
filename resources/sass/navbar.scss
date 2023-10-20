@@ -28,6 +28,14 @@ nav{
                 color: $navbar-brand-color-hover;
             }
 
+            span{
+                @media screen and (max-width: 768px) {
+                    display: none !important;
+                }
+            }
+
+            
+
             .logo-brand{
                 width: 50px;
                 height: 50px;
@@ -38,7 +46,38 @@ nav{
             }
         }
 
+        .active-nav-menu{
+            @media screen and (max-width: 768px) {
+                width: 100% !important;
+                a{
+                    display: block !important;
+                    color: white !important;
+                }
+            }
+        }
+
         .menu{
+            @media screen and (max-width: 768px) {
+                position: fixed;
+                width: 100%;
+                height: 100vh;
+                width: 0%;
+                overflow: hidden;
+                background-color: #06507a;
+                flex-direction: column;
+                align-items: center;
+                justify-content: start;
+                top: 84.33px;
+                left: 0;
+                transition: .5s;
+                padding-top: 1.5rem;
+                a{
+                    color: transparent;
+                    margin: 2rem 0rem !important;
+                    display: None;
+                    animation: .5s
+                };
+            }
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -62,10 +101,15 @@ nav{
         }
 
         .hamburger{
-            display: none;
-            cursor: pointer;
+            padding: 0.25rem 0.5rem;
+            font-size: 1.05rem;
+            display: None;
             margin-right: 10px;
             color: $navbar-color;
+
+            @media screen and (max-width: 768px) {
+                display: block !important;
+            }
 
             &:hover{
                 color: #ffd33d;
@@ -86,10 +130,3 @@ nav{
     }
 }
 
-@include media-breakpoint-up(sm) {
-    .nav-wrapper{
-        .menu{
-            display: none;
-        }
-    }
-}

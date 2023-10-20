@@ -8,33 +8,15 @@
 .form-container{
     border: none;
     padding: 0;
-    .form-bg{
-        width: auto;
-        max-width: 280px;
-        height: 100%;
-        display: table-cell;
-
-        img{
-            object-fit: cover;
-            width: 100%;
-        }
-    }
+    
     .form-content{
-        width: 100%;
-        padding: 30px;
+        padding: 0px;
     }
 }
 
 .form-bg{
-    width: auto;
-    max-width: 280px;
-    height: 100%;
-    display: table-cell;
-
-    img{
-        object-fit: cover;
-        width: 100%;
-    }
+    background: url("/images/form-image.jfif") no-repeat center center;
+    background-size: cover;
 }
 .form-control{
     border-radius: $form-control-radius;

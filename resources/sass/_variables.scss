@@ -6,10 +6,10 @@ $font-family: 'Lato', sans-serif;
 $font-size-base: 1.2rem;
 $line-height-base: 1.6;
 $font-weight-base: 400;
-$font-color-base: white;
+$font-color-base: rgb(255, 255, 255);
 
 // Progress bar
-$progress-bar-bg: #fffa73;
+$progress-bar-bg: #130686;
 
 // navbar
 $navbar-bg: #032e48;
@@ -22,8 +22,8 @@ $navbar-padding: 13px 25px;
     //menu
     $navbar-color: #f8fafc;
     $navbar-color-hover: #c7c478;
-    $navbar-font-size: 1.2rem;
-    $navbar-font-weight: 600;
+    $navbar-font-size: 1rem;
+    $navbar-font-weight: 800;
 // -navbar- //
 
 // buttons
@@ -50,7 +50,7 @@ $btn-tertiary-bg-hover: #000000;
 $btn-tertiary-color-hover: #000000;
 $btn-tertiary-border-hover: 2px solid #000000;
 
-$btn-radius: 15px;
+$btn-radius: 3px;
 $btn-padding: 0.5rem 1rem;
 $btn-font-size: 1.1rem;
 $btn-font-weight: 500;
@@ -69,4 +69,4 @@ $form-control-shadow-focus: 0 0 0 0.15rem rgb(51 67 255 / 25%);
 
 // Misc
 $rainbow-background: linear-gradient(90deg,#ffd33d,#ea4aaa 17%,#b34bff 34%,#01feff 51%,#ffd33d 68%,#ea4aaa 85%,#b34bff);
-$areas_background: linear-gradient(40deg, rgba(83,93,48,1) 0%, rgba(25,77,106,1) 35%, rgba(3, 46, 72, 1) 100%);
+$areas_background: rgb(3, 46, 72);

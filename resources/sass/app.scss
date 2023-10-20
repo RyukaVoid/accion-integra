@@ -16,6 +16,7 @@
 
 // Misc
 @import './animations';
+@import './diviers';
 @import './buttons';
 @import './carousel';
 @import './footer';
@@ -39,7 +40,6 @@ html, body{
     }
     font-family: $font-family;
     font-weight: 900;
-
 }
 
 // Barra de progreso
@@ -47,12 +47,26 @@ html, body{
     width: 0%;
     height: 5px;
     position: fixed;
-    top: 0;
+    bottom: 0;
     right: 0;
     left: 0;
-    z-index: 11;
+    z-index: 51;
     border-radius: 10px;
-    background: $progress-bar-bg;
+    transition: all 0.3s ease-out;
+    background: $areas_background;
+}
+
+.font-size-large{
+    font-size: 1.3rem !important;
+
+    @media screen and (max-width: 768px){
+        font-size: 1.1rem !important;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1024px){
+        font-size: 1.2rem !important;
+    }
+
 }
 
 .hover-image{
@@ -87,7 +101,8 @@ html, body{
         }
     }
 }
-@include media-breakpoint-up(md) { }
+@include media-breakpoint-up(md) {
+}
 @include media-breakpoint-up(lg) {
     .w-lg-100{
         width: auto;

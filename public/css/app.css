@@ -5089,7 +5089,7 @@ textarea.form-control-lg {
   color: #fff;
   text-align: center;
   white-space: nowrap;
-  background-color: #fffa73;
+  background-color: #130686;
   transition: width 0.6s ease;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -21663,8 +21663,89 @@ readers do not read off random characters that represent icons */
     opacity: 1;
   }
 }
+.divider-top {
+  background-color: rgb(3, 46, 72);
+  position: relative;
+  margin-top: 0;
+  overflow: hidden;
+  z-index: 100;
+  height: 130px;
+  -webkit-clip-path: polygon(0 0, 100% 50px, 100% 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 50px, 100% 100%, 0 100%);
+}
+
+.divider-bottom {
+  background-color: rgb(3, 46, 72);
+  position: relative;
+  margin-top: 0;
+  overflow: hidden;
+  z-index: 100;
+  height: 130px;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 50px));
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 50px));
+}
+
+.divider-bottom-arrow {
+  background-color: rgb(3, 46, 72);
+  position: relative;
+  margin-top: 0;
+  overflow: hidden;
+  z-index: 100;
+  height: 110px;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 50px));
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 50px));
+}
+
+.wave-container {
+  height: 15vh;
+  background-color: #ffffff;
+  position: relative;
+}
+
+.wave-container::before {
+  content: "";
+  width: 100%;
+  height: 90px;
+  position: absolute;
+  bottom: -0.3%;
+  left: 0;
+  background-size: auto;
+  background-repeat: repeat no-repeat;
+  background-position: 19vw bottom;
+  background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1200 80' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0 13L33 11C82 8 133 8 200 17C267 26 333 40 400 42C467 44 533 35 600 24C667 13 733 0 800 0C867 0 933 13 1000 17C1067 22 1133 17 1167 15L1200 13V80H1167C1133 80 1067 80 1000 80C933 80 867 80 800 80C733 80 667 80 600 80C533 80 467 80 400 80C333 80 267 80 200 80C133 80 67 80 33 80H0V22.332Z' fill='%23181c32'/></svg>");
+}
+
+@media (max-width: 850px) {
+  .wave-container::before {
+    height: 45px;
+  }
+}
+.wave-container-top {
+  height: 15vh;
+  background-color: #033F62;
+  position: relative;
+}
+
+.wave-container-top::before {
+  content: "";
+  width: 100%;
+  height: 94px;
+  position: absolute;
+  bottom: -0.3%;
+  left: 0;
+  background-size: auto;
+  background-repeat: repeat no-repeat;
+  background-position: 22vw bottom;
+  background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1200  134' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0 98L50 92C100 86 200 74 300 50C400 26 500 -10 600 2C700 14 800 74 900 98C1000 122 1100 110 1150 104L1200 98V134H1150C1100 134 1000 134 900 134C800 134 700 134 600 134C500 134 400 134 300 134C200 134 100 134 50 134H0V98Z' fill='%23ffffff'/></svg>");
+}
+
+@media (max-width: 850px) {
+  .wave-container-top::before {
+    height: 47px;
+  }
+}
 .btn {
-  border-radius: 15px;
+  border-radius: 3px;
   padding: 0.5rem 1rem;
   font-size: 1.1rem;
   font-weight: 500;
@@ -21759,32 +21840,13 @@ footer a:hover em {
   border: none;
   padding: 0;
 }
-.form-container .form-bg {
-  width: auto;
-  max-width: 280px;
-  height: 100%;
-  display: table-cell;
-}
-.form-container .form-bg img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
-}
 .form-container .form-content {
-  width: 100%;
-  padding: 30px;
+  padding: 0px;
 }
 
 .form-bg {
-  width: auto;
-  max-width: 280px;
-  height: 100%;
-  display: table-cell;
-}
-.form-bg img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
+  background: url("/images/form-image.jfif") no-repeat center center;
+  background-size: cover;
 }
 
 .form-control {
@@ -21834,6 +21896,11 @@ nav .nav-wrapper a {
 nav .nav-wrapper a:hover {
   color: #fffa73;
 }
+@media screen and (max-width: 768px) {
+  nav .nav-wrapper a span {
+    display: none !important;
+  }
+}
 nav .nav-wrapper a .logo-brand {
   width: 50px;
   height: 50px;
@@ -21842,6 +21909,15 @@ nav .nav-wrapper a .logo-brand {
   display: inline-block;
   vertical-align: middle;
 }
+@media screen and (max-width: 768px) {
+  nav .nav-wrapper .active-nav-menu {
+    width: 100% !important;
+  }
+  nav .nav-wrapper .active-nav-menu a {
+    display: block !important;
+    color: white !important;
+  }
+}
 nav .nav-wrapper .menu {
   display: flex;
   align-items: center;
@@ -21849,24 +21925,54 @@ nav .nav-wrapper .menu {
   margin: 0;
   padding: 0;
 }
+@media screen and (max-width: 768px) {
+  nav .nav-wrapper .menu {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    width: 0%;
+    overflow: hidden;
+    background-color: #06507a;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    top: 84.33px;
+    left: 0;
+    transition: 0.5s;
+    padding-top: 1.5rem;
+  }
+  nav .nav-wrapper .menu a {
+    color: transparent;
+    margin: 2rem 0rem !important;
+    display: None;
+    -webkit-animation: 0.5s;
+            animation: 0.5s;
+  }
+}
 nav .nav-wrapper .menu a {
   color: #f8fafc;
   text-decoration: none;
-  font-size: 1.2rem;
-  font-weight: 600;
+  font-size: 1rem;
+  font-weight: 800;
   margin: 0 15px;
   padding: 0;
   transition: 0.2s;
 }
 nav .nav-wrapper .menu a:hover {
   color: #c7c478;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 }
 nav .nav-wrapper .hamburger {
-  display: none;
-  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  font-size: 1.05rem;
+  display: None;
   margin-right: 10px;
   color: #f8fafc;
+}
+@media screen and (max-width: 768px) {
+  nav .nav-wrapper .hamburger {
+    display: block !important;
+  }
 }
 nav .nav-wrapper .hamburger:hover {
   color: #ffd33d;
@@ -21884,18 +21990,13 @@ nav .nav-wrapper .hamburger:hover {
   font-weight: 600 !important;
 }
 
-@media (min-width: 576px) {
-  .nav-wrapper .menu {
-    display: none;
-  }
-}
 section {
   width: 100%;
   max-width: 1300px !important;
   margin: auto;
   min-height: 100vh;
   font-size: 1.2rem;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .text-op-6 {
@@ -21907,7 +22008,7 @@ section {
 }
 
 .areas-bg {
-  background: linear-gradient(40deg, rgb(83, 93, 48) 0%, rgb(25, 77, 106) 35%, rgb(3, 46, 72) 100%);
+  background: rgb(3, 46, 72);
 }
 
 .section-2 {
@@ -21944,8 +22045,7 @@ section {
 .section-4 {
   background-color: white;
   color: black;
-  padding: 100px;
-  min-height: auto;
+  box-shadow: 0px 0px 21px rgba(0, 0, 0, 0.0705882353);
 }
 
 .section-5 {
@@ -21956,7 +22056,7 @@ section {
   padding-bottom: 90px;
 }
 .section-5 .siguenos {
-  background: linear-gradient(40deg, rgb(83, 93, 48) 0%, rgb(25, 77, 106) 35%, rgb(3, 46, 72) 100%);
+  background: rgb(3, 46, 72);
   width: 100%;
   padding: 35px 35px;
   color: white;
@@ -22047,12 +22147,27 @@ html, body {
   width: 0%;
   height: 5px;
   position: fixed;
-  top: 0;
+  bottom: 0;
   right: 0;
   left: 0;
-  z-index: 11;
+  z-index: 51;
   border-radius: 10px;
-  background: #fffa73;
+  transition: all 0.3s ease-out;
+  background: rgb(3, 46, 72);
+}
+
+.font-size-large {
+  font-size: 1.3rem !important;
+}
+@media screen and (max-width: 768px) {
+  .font-size-large {
+    font-size: 1.1rem !important;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .font-size-large {
+    font-size: 1.2rem !important;
+  }
 }
 
 .hover-image {

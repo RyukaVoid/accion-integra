@@ -1,19 +1,18 @@
+{{-- variables --}}
+@php
+$social_urls = [
+    'facebook' => 'https://www.facebook.com/CorporacionAccionIntegra/',
+    'instagram' => 'https://www.instagram.com/accionintegra/',
+    'twitter' => 'https://twitter.com/',
+    'youtube' => 'https://www.youtube.com/channel/UCu6iAqooqVecrQEw3jZ5XEA/',
+    'linkedin' => 'https://www.linkedin.com/',
+    'email' => 'mailto:contacto@accionintegra.org'
+];
+@endphp
 @extends('layout.master')
 @section('title', 'Inicio')
 @section('content')
-    {{-- variables --}}
-    @php
-        $social_urls = [
-            'facebook' => 'https://www.facebook.com/CorporacionAccionIntegra/',
-            'instagram' => 'https://www.instagram.com/accionintegra/',
-            'twitter' => 'https://twitter.com/',
-            'youtube' => 'https://www.youtube.com/channel/UCu6iAqooqVecrQEw3jZ5XEA/',
-            'linkedin' => 'https://www.linkedin.com/',
-            'email' => 'mailto:contacto@accionintegra.org'
-        ];
-    @endphp
-
-    <div class="row py-5" style="margin-top: 85px;background: #033F62;">
+    <div class="row py-5" style="margin-top: 96px;background: #033F62;">
         <div class="col-12 p-0">
             <div id="carouselExampleControls" class="carousel slide mx-auto" style="max-width:1300px;"
                 data-bs-ride="carousel" data-interval="false">
@@ -50,8 +49,18 @@
             </div>
         </div>
     </div>
+    <div class="wave-container-top"></div>
+
         
-        <div class="row" style="margin: 100px 0px; font-size:1.4rem" id="about-us">
+        <div
+            class="
+                row
+                font-size-large
+                animate__animated animate__fadeInUp
+            "
+            style="margin: 6.25rem 0px; color:#616161 !important"
+            id="about-us"
+        >
             <div class="col-12 info-section text-center" style="padding: 40px; max-width:1300px;margin:auto">
                 <h2 class="mb-6 fw-bolder">Acción integra es una corporación social sin fines de lucro</h2>
                 <p class="mb-6">
@@ -69,21 +78,24 @@
             </div>
         </div>
 
-        <div 
+        <div class="divider-top"></div>
+        <div
             class="
                 row
                 justify-center
                 text-white-6
                 areas-bg
                 pa-15
-                shadow"
+                shadow
+                m-0
+            "
         >
             <div
-            class="row"
-            style="max-width: 1300px"
+                class="row"
+                style="max-width: 1300px"
 
             >
-                <div class="col-lg-4 col-md-6 text-center">
+                <div class="col-lg-4 col-md-6 text-center animate__animated animate__zoomIn">
                     <em class="fa-solid fa-users fa-4x mb-9"></em>
                     <h4 class="mb-9">Área capacitación a grupo de apoyo</h4>
                     <p>
@@ -92,7 +104,7 @@
                         sexual, vida social o autoregulación.
                     </p>
                 </div>
-                <div class="col-lg-4 col-md-6 text-center">
+                <div class="col-lg-4 col-md-6 text-center animate__animated animate__zoomIn">
                     <em class="fa-solid fa-hands fa-4x mb-9"></em>
                     <h4 class="mb-9">Área de terapia adicional para el individuo</h4>
                     <p>
@@ -101,7 +113,7 @@
                         música, arte, jardineria, entre otros.
                     </p>
                 </div>
-                <div class="col-lg-4 col-md-12 text-center">
+                <div class="col-lg-4 col-md-12 text-center animate__animated animate__zoomIn">
                     <em class="fa-solid fa-graduation-cap fa-4x mb-9"></em>
                     <h4 class="mb-9">Área de educación general</h4>
                     <p>
@@ -112,10 +124,11 @@
                 </div>
             </div>
         </div>
+        <div class="divider-bottom"></div>
 
-        <div class="row" style="margin: 100px 0px; font-size:1.4rem !important">
-            <div class="col-12 text-center" style="padding: 40px;max-width:1300px;margin:auto;">
-                <h1 class="mb-6">Plantéate. Una educación e inclusión sociolaboral</h1>
+        <div class="row font-size-large animate__animated animate__fadeInUp" style="margin: 6.25rem 0px;">
+            <div class="col-12 text-center" style="padding: 40px;max-width:1300px;margin:auto; color:#616161 !important">
+                <h2 class="mb-6 fw-bolder">Plantéate. Una educación e inclusión sociolaboral</h1>
                 <p class="mb-6">
                     Actualmente desarrollamos talleres online tanto terapéuticos como de desarrollo
                     personal y proponemos complementar la educación curricular con distintos
@@ -136,8 +149,23 @@
             <h4 class="text-center">Noticias</h4>
         </div> --}}
 
-        <div class="container">
-            <div class="row align-items-center text-white-6 mb-16 areas-bg pa-15 rounded shadow" id="join-us">
+        <div class="container mb-5">
+            <div
+                class="
+                    row
+                    animate__animated
+                    animate__fadeIn
+                    text-black
+                "
+                style="
+                    box-shadow: rgba(0, 0, 0, 0.2) 3px 3px 9px 2px;
+                    border-radius:5px
+                "
+                id="join-us"
+            >
+            <form action="{{ route('contactanos') }}" method="POST" style="padding: 0">
+                @method('POST')
+                @csrf
                 @if (Session::has('status'))
                     <div class="col-12">
                         <div class="alert alert-success alert-dismissible fade show" role="alert">
@@ -145,60 +173,57 @@
                         </div>
                     </div>
                 @endif
-                <div class="col-lg-8 px-lg-5">
-                    <h3 class="mb-4 px-2">Ponte en contacto con nosotros.</h3>
-                    <form action="{{ route('contactanos') }}" method="POST">
-                        @method('POST')
-                        @csrf
-                        <div class="row">
-                            <div class="mb-4 col-lg-6">
-                                <label for="nombre">nombre</label>
-                                <input type="text" name="nombre" class="form-control" id="nombre" required
-                                    placeholder="Nombre">
-                            </div>
-                            <div class="mb-4 col-lg-6">
-                                <label for="email">Correo</label>
-                                <input type="email" name="email" class="form-control" id="email" required
-                                    placeholder="Correo">
-                            </div>
-                            <div class="mb-4">
-                                <label for="mensaje">Mensaje</label>
-                                <textarea
-                                    name="mensaje"
-                                    class="form-control"
-                                    id="mensaje" rows="6"
-                                    placeholder="Mensaje (opcional)"
-                                ></textarea>
+                <div class="container">
+                    <div class="row">
+                        <div
+                            class="col-12 col-md-4 form-bg"
+                            style="min-height: 215px"
+                        ></div>
+                        <div class="col-12 col-md-8 px-lg-5">
+                            <h3 class="mb-4 px-2">Ponte en contacto con nosotros.</h3>
+                            
+                                <div class="row">
+                                    <div class="mb-4 col-lg-6">
+                                        <label for="nombre">nombre</label>
+                                        <input type="text" name="nombre" class="form-control" id="nombre" required
+                                            placeholder="Nombre">
+                                    </div>
+                                    <div class="mb-4 col-lg-6">
+                                        <label for="email">Correo</label>
+                                        <input type="email" name="email" class="form-control" id="email" required
+                                            placeholder="Correo">
+                                    </div>
+                                    <div class="mb-4">
+                                        <label for="mensaje">Mensaje</label>
+                                        <textarea
+                                            name="mensaje"
+                                            class="form-control"
+                                            id="mensaje" rows="6"
+                                            placeholder="Mensaje (opcional)"
+                                            style="resize: none"
+                                        ></textarea>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 text-end">
+                                        <button type="submit" class="btn btn-primary w-100 text-white">Enviar</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-12 text-end">
-                                <button type="submit" class="btn btn-primary w-100">Enviar</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <div class="col-lg-4 d-none d-lg-block form-bg text-center">
-                    <div>
-    
-                        <img
-                            style="max-width: 400px;border: 2px solid white"
-                            src="{{ asset('images/form-image.jfif') }}"
-                            alt=""
-                        >
                     </div>
                 </div>
-            </div>
+            </form>
         </div>
 
         <div class="container">
             <div class="row my-16">
                 <div class="col-12 text-center">
-                    <h1 class="mb-4">¡Siguenos! y enterate de nuestras noticias.</h4>
+                    <h1 class="mb-4" style="color:#616161 !important">¡Siguenos! y enterate de nuestras noticias.</h4>
                 </div>
     
                 <div class="col-12 col-sm-12 col-md-6 col-lg-3">
-                    <div class="card social-card">
+                    <div class="card social-card animate__animated animate__fadeInLeft">
                         <div class="card-body text-center">
                             <em class="fa-brands facebook fa-facebook my-6 fa-4x"></em>
     
@@ -211,7 +236,7 @@
                       </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-6 col-lg-3">
-                    <div class="card social-card">
+                    <div class="card social-card animate__animated animate__fadeInLeft">
                         <div class="card-body text-center">
                             <em class="fa-brands instagram fa-instagram my-6 fa-4x"></em>
     
@@ -224,20 +249,20 @@
                       </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-6 col-lg-3">
-                    <div class="card social-card">
+                    <div class="card social-card animate__animated animate__fadeInRight">
                         <div class="card-body text-center">
                             <em class="fa-brands youtube fa-youtube my-6 fa-4x"></em>
     
                             <h5 class="card-title fw-bolder">Youtube</h5>
                             <p class="card-text">
-                            Suscribete a nuestro Youtube para ver nuestros videos informativos y de actividades
+                            Suscribete a nuestro Youtube para ver nuestros videos y actividades
                             </p>
                           <a href="{{ $social_urls['youtube'] }}" class="btn btn-tertiary">Suscribete</a>
                         </div>
                       </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-6 col-lg-3">
-                    <div class="card social-card">
+                    <div class="card social-card animate__animated animate__fadeInRight">
                         <div class="card-body text-center">
                             <em class="fa fa-envelope my-6 fa-4x"></em>
     
@@ -251,32 +276,4 @@
                 </div>
             </div>
         </div>
-
-    <footer id="footer">
-        <div class="row p-3">
-            <div class="col-12 d-flex justify-content-between align-items-center flex-wrap px-12"
-                style="max-width: 1300px; margin:auto">
-                <img width="195" src="{{ asset('images/logo.png') }}" class="mr-5" alt="logo">
-                <div>
-                    <a href="{{ $social_urls['facebook'] }}" class="text-white text-decoration-none">
-                        <em class="fa-brands fa-facebook mr-4"></em>
-                    </a>
-                    <a href="{{ $social_urls['instagram'] }}" class="text-white text-decoration-none">
-                        <em class="fa-brands fa-instagram mr-4"></em>
-                    </a>
-                    <a href="{{ $social_urls['youtube'] }}" class="text-white text-decoration-none">
-                        <em class="fa-brands fa-youtube mr-4"></em>
-                    </a>
-                    <a href="{{ $social_urls['email'] }}" class="text-white text-decoration-none">
-                        <em class="fa fa-envelope mr-4"></em>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="row p-0" style="background: rgb(16, 18, 32)">
-            <div class="col-12 d-flex justify-content-center">
-                <span class="text-center">© 2023 Copyright: accionintegra.org </span>
-            </div>
-        </div>
-    </footer>
 @endsection
